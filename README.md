@@ -7,7 +7,7 @@ This structure enables rich, expressive object logic while keeping the engine mo
 
 ## Setup
 
-View the [SUPPORT.md](https://github.com/halfcomplete/BOCS/edit/main/README.md) file.
+View the [SUPPORT.md](https://github.com/halfcomplete/BOCS/edit/main/SUPPORT.md) file.
 
 ## Why BOCS?
 
