@@ -7,12 +7,12 @@ namespace BOCS._Core
     /// <summary>
     /// A base class for all objects in the BOCS system, with support for adding and managing behaviours.
     /// </summary>
-    public abstract class BOCSObject
+    public class BOCSObject
     {
         /// <summary>
         /// The name of the object, used for display.
         /// </summary>
-        public abstract string Name { get; }
+        public string Name { get; }
 
         /// <summary>
         /// A unique identifier for the object.
@@ -24,6 +24,11 @@ namespace BOCS._Core
         /// </summary>
         public Dictionary<IAction, List<IBehaviour>> Behaviours { get; private set; } = new Dictionary<IAction, List<IBehaviour>>();
         
+        public BOCSObject(string name)
+        {
+            Name = name;
+        }
+
         #region Behaviours
         /// <summary>
         /// Adds a Behaviour to this object.
